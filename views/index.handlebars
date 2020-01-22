@@ -1,0 +1,28 @@
+<h1>masterful css work</h1>
+
+<div class = "style-div">
+	<form method = "POST">
+		<input type = "text" id = "bergertext">
+		<input type = "submit" value = "order up!" id = "order">
+	</form>
+</div>
+
+<div class = "style-div">
+	<ul>
+	{{#each bergers}}
+		{{#unless eaten}}
+			{{> part eaten=false}}
+		{{/unless}}
+	{{/each}}
+	</ul>
+</div>
+
+<div class = "style-div">
+	<ul>
+		{{#each bergers}}
+			{{#if eaten}}
+				{{> part eaten=true}}
+			{{/if}}
+		{{/each}}
+	</ul>
+</div>

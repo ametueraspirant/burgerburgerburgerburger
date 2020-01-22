@@ -8,3 +8,4 @@ create table bergers
 	eaten boolean default false,
 	primary key (id)
 );
+
