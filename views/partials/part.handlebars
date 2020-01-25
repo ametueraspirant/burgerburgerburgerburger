@@ -1,8 +1,5 @@
 <li>
 	{{name}}
-	{{#if eaten}}
-	<button class="trash-it" data-id="{{this.id}}">throw it away</button>
-	{{/if}}
 	{{#unless eaten}}
 	<button class="eat-it" data-id="{{id}}" data-iseated="{{eaten}}">eat it</button>
 	{{/unless}}
